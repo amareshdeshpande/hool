@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
-@EnableAutoConfiguration
+//@EnableAutoConfiguration
 public class HomeController {
 
    @RequestMapping(value = { "/"}, method = RequestMethod.GET)
