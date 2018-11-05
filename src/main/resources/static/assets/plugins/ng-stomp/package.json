@@ -1,0 +1,58 @@
+{
+  "_from": "ng-stomp",
+  "_id": "ng-stomp@0.5.0",
+  "_inBundle": false,
+  "_integrity": "sha512-m8BCrrJRimyCuxbuUYanyeBvxMu+JmggnpMw8ZrauSmnsns9GkgKyt8HS07P8aqCIY+XgFkVK8YxGr8tc/87bg==",
+  "_location": "/ng-stomp",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "ng-stomp",
+    "name": "ng-stomp",
+    "escapedName": "ng-stomp",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/ng-stomp/-/ng-stomp-0.5.0.tgz",
+  "_shasum": "f17ab8adc8ffb6ed894c2b742c9473a83412d18c",
+  "_spec": "ng-stomp",
+  "_where": "E:\\Project Backup\\HOOL\\Hool\\mobile",
+  "author": {
+    "name": "Maik Hummel",
+    "email": "m@ikhummel.com"
+  },
+  "bugs": {
+    "url": "https://github.com/beevelop/ng-stomp/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "STOMP for AngularJS",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-uglify": "^2.0.0",
+    "grunt-file-exists": "^0.1.4"
+  },
+  "homepage": "https://github.com/beevelop/ng-stomp",
+  "keywords": [
+    "AngularJS",
+    "STOMP",
+    "websocket"
+  ],
+  "license": "MIT",
+  "main": "src/ng-stomp.js",
+  "name": "ng-stomp",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beevelop/ng-stomp.git"
+  },
+  "scripts": {
+    "test": "grunt --verbose"
+  },
+  "version": "0.5.0"
+}

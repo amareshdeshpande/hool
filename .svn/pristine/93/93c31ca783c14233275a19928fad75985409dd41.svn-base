@@ -1,0 +1,26 @@
+<div id="leftal"  ng-controller="sideBarCtrl  as sb">  
+      <div id="Left_Icon_One"  ng-click="menu()">
+          <img id="imgX"  ng-src="{{menuIcon}}" >        
+      </div>
+      
+      <div id="Left_Icon_Two" ng-show="sidebar[0]"   ng-click="backBtnCliked()">
+        <img src="assets/images/HOOLAsset10mdpi.svg">
+      </div>
+      <div id="Left_Icon_Three" ng-show="sidebar[1]">
+        <img style="opacity:0.2" src="assets/images/HOOLAsset14mdpi.svg">
+      </div>
+      <div id="Left_Icon_Four"  ng-show="sidebar[2]"> <!--ng-click="showChat()"-->
+        <img id="imgchatting"  style="opacity:0.2"  src="assets/images/HOOLAsset13mdpi.svg">
+      </div>
+      <!--Logout block-->
+      <div id="Left_Icon_Five"  ng-show="menuItems[0]" ng-click="logoutOrBack()">
+        <img  ng-src="{{logoutOrBackIcon}}">
+      </div>         
+      
+      <div id="Left_Icon_Six"  ng-show="menuItems[1]">
+        <img  style="opacity:0.2" src="assets/images/HOOLAsset16mdpi.svg">
+      </div>
+      <div id="Left_Icon_Seven"  ng-show="menuItems[2]"> <!--ng-click="settings()"-->
+        <img style="opacity:0.2" id="imgsetting" ng-src="{{settingIcon}}" >
+      </div>        
+</div> 

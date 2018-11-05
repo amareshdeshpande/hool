@@ -1,0 +1,128 @@
+package com.hool.app;
+
+import static org.hamcrest.CoreMatchers.instanceOf;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
+
+import com.hoo.app.misc.Direction;
+import com.hool.app.model.DealHand;
+import com.hool.app.model.HandStats;
+import com.hool.app.service.Deck;
+import com.hool.app.service.Hand;
+
+public class Test {
+	public static void main(String[] args) {
+		
+		String contract="2H";
+		int doubleCount=1;
+			
+		int NShand=12;
+		int EWHand=1;
+		int NSPoint=0;
+		int EWPoint=0;
+		
+		int DeclaredSide=1;  // 1=NS 2=EW
+		
+		int basicPoint=((DeclaredSide==1?NShand:EWHand)-Integer.parseInt(contract.substring(0,1))-6)*10;
+		
+		
+		if(basicPoint>0){			
+			 basicPoint=basicPoint+getBonusPoint(contract);			
+		}
+		
+		 basicPoint=doubleCount>0?basicPoint*doubleCount*2:basicPoint;
+		 
+		 if(basicPoint>0){	
+			 NSPoint=DeclaredSide==1?basicPoint:0;
+			 EWPoint=DeclaredSide==2?basicPoint:0;	
+		 }else{
+			 NSPoint=DeclaredSide==1?basicPoint:(EWPoint=-basicPoint);
+			 EWPoint=DeclaredSide==2?basicPoint:(NSPoint=-basicPoint);		
+		 }
+		
+		
+		System.out.println(" EWPoint :"+EWPoint+" NSPoint :"+NSPoint);
+		
+			
+	}
+	
+	
+	
+	static int getBonusPoint(String contract){
+		return 0;
+		
+	}
+	
+	
+}
+
+class Emplyoee{
+	int id;
+	String name;
+	Emplyoee(int id,String name){
+		this.id=id;
+		this.name=name;
+	}
+	
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Emplyoee other = (Emplyoee) obj;
+		if (id != other.id)
+			return false;
+		if (name == null) {
+			if (other.name != null)
+				return false;
+		} else if (!name.equals(other.name))
+			return false;
+		return true;
+	}
+	
+	
+	
+	
+}
+
+
+class User {
+    private String name;
+    private int age;
+    private String passport;
+
+	
+
+    @Override
+    public boolean equals(Object o) {
+
+        if (o == this) return true;
+        if (!(o instanceof User)) {
+            return false;
+        }
+
+        User user = (User) o;
+
+        return user.name.equals(name) &&
+                user.age == age &&
+                user.passport.equals(passport);
+    }
+
+    //Idea from effective Java : Item 9
+    @Override
+    public int hashCode() {
+        int result = 17;
+        result = 31 * result + name.hashCode();
+        result = 31 * result + age;
+        result = 31 * result + passport.hashCode();
+        return result;
+    }
+
+}

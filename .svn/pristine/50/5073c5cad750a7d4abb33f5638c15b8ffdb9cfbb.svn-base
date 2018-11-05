@@ -1,0 +1,13 @@
+<div id="ChatingArea" >
+		<div class="ChatingBox">
+			<div class="ChatingTypeBD"><input type="text" class="ChatingType" id="fname" name="firstname" placeholder="Type..."></div>
+			<div class="ChatingAro"><div id="ChatingAroX"></div></div>
+		</div>
+		<div class="ChatingRlst">
+			<div class="ChatingNotificationTx"><span id="NotificationMsg">Mace Windo is requesting access as a Kibitzer</span><span id="NotificationAccept">Accept</span><span id="NotificationDeny">Deny</span></div>
+			<div class="ChatingTxMe"><span id="MeMsg">Me</span> <span id="MeMsgTx">Maul consectetuer adipiscing elit, sed diam nonu </span></div>
+			<div class="ChatingTxYou"><span id="YouMsg">You</span> <span id="YoueMsgTx">Sem depis ot fit nonter. Lorem ipsumdolor sit. </span></div>
+		</div>
+</div>
+
+<div class="TpntArea"></div>

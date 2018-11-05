@@ -1,0 +1,24 @@
+
+	 <div id="loginbody" ng-init="init()">
+		<div class="container">
+		  <div id="login">
+			<form action="javascript:void(0);" ng-submit="signIn()">
+			  <fieldset class="clearfix">
+				<p><span class="fontawesome-user"></span>
+					<input type="text" placeholder="Username" ng-model="member.loginId" required>
+				</p> 
+				<p><span class="fontawesome-lock"></span>
+					<input type="password" placeholder="Password" ng-model="member.password" required>
+				</p> 
+				<p><input type="submit" value="sign in"></p>
+				<p>
+					<a href="#!/register" style="color:white;text-decoration: none; float:left;">sign up</a>
+					<a href="#!/recover/password" style="color:white;text-decoration: none; float:right;">forgot password</a>
+				</p>
+				<!-- <p><a href="#!/register" style="color:white;text-decoration: none;text-align:right;">Sign Up</a></p>
+				<p><a href="#!/recover/password" style="color:white;text-decoration: none;text-align:left;">ForgetPassword</a></p> -->
+			  </fieldset>
+			</form>
+		  </div> 
+		</div>
+	</div>

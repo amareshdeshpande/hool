@@ -1,0 +1,23 @@
+
+	 <div id="loginbody">
+		<div class="container">
+		  <div id="login">
+			<p>Try leaving the first input field blank:</p>
+			<fieldset class="clearfix">
+
+				<form name="myForm">
+					<p>
+						<input name="myName" ng-model="myName" required>
+						
+					</p>
+					<p ng-show="myForm.myName.$touched && myForm.myName.$invalid" >The name is required</p>
+
+					<p>
+					<input name="myAddress" ng-model="myAddress" required>
+					</p>
+				</form>
+
+		  </div> 
+		  
+		</div>
+	</div>
